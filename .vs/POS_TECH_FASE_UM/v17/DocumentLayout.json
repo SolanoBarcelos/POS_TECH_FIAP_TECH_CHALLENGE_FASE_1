@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git\\POS_TECH_FASE_UM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\testes_pos_tech_fase_um\\contatotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\contatotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\service\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\service\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\testes_pos_tech_fase_um\\testes_pos_tech_fase_um.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\testes_pos_tech_fase_um.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\interface\\icontatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\interface\\icontatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\interface\\icontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\interface\\icontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fase_um\\pos_tech_fase_um\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IContatoRepository.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:48:15.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContatoController.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:08:14.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Program.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Program.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Program.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:03:06.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contato.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Models\\Contato.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Models\\Contato.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Models\\Contato.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Models\\Contato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:51:29.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TESTES_POS_TECH_FASE_UM",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
+              "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
+              "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T18:44:23.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contatotests.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
+              "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
+              "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:32:45.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContatoService.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAADUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:01:40.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IContatoService.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:00:42.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContatoRepository.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAWwCcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:47:29.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:50:47.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\appsettings.json",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\appsettings.json",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\appsettings.json",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T16:05:57.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\WeatherForecast.cs",
+              "ToolTip": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\WeatherForecast.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:50:43.411Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

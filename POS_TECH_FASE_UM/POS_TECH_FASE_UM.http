@@ -1,0 +1,6 @@
+@POS_TECH_FASE_UM_HostAddress = http://localhost:5296
+
+GET {{POS_TECH_FASE_UM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

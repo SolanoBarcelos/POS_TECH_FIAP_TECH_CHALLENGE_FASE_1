@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\POS_TECH_FASE_UM.props" />
+</Project>
