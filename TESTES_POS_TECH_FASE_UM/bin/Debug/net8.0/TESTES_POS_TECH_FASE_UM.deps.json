@@ -1112,7 +1112,10 @@
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "POS_TECH_FASE_UM.dll": {}
+          "POS_TECH_FASE_UM.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

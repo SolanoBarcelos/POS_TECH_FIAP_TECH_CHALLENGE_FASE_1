@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OuHCPgcwjfFwfi8jKMUeirfU6vEy+QHoSJRfYwC/JrN53SXHGoVNrtIG+Ve/2ice4idBKxwb7JwT8xpeHJ2Jug==",
+  "dgSpecHash": "t32Q+VGTf2I=",
   "success": true,
-  "projectFilePath": "C:\\Git\\POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
+  "projectFilePath": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solan\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\solan\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

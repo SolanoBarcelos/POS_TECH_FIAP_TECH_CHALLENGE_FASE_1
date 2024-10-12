@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Contato",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "Create",
+    "RelativePath": "api/Contato",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contato",
+        "Type": "POS_TECH_FASE_UM.Models.Contato",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "GetById",
+    "RelativePath": "api/Contato/{id_contato}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_contato",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "Update",
+    "RelativePath": "api/Contato/{id_contato}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_contato",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "contato",
+        "Type": "POS_TECH_FASE_UM.Models.Contato",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "Delete",
+    "RelativePath": "api/Contato/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "GetByDDD",
+    "RelativePath": "api/Contato/ddd/{ddd}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ddd",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

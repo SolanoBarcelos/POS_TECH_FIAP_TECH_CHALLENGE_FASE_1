@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BLHv5hwTntI+xVu8YxQNyCgI2lHD3vCozpxx84rs8eFixW5/xuxfXFr6w+F/qllKuvrDbSmqLhNJPBGldab+uA==",
+  "dgSpecHash": "08+cfz85BQ8=",
   "success": true,
-  "projectFilePath": "C:\\Git\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj",
+  "projectFilePath": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solan\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\solan\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

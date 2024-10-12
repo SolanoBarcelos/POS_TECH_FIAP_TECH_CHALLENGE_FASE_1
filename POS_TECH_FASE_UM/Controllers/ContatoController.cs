@@ -23,7 +23,7 @@ namespace POS_TECH_FASE_UM.Controllers
             return Ok(_contatoService.GetAllContatos());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id_contato}")]
         public IActionResult GetById(int id_contato)
         {
             var contato = _contatoService.GetContatoById(id_contato);
@@ -46,7 +46,7 @@ namespace POS_TECH_FASE_UM.Controllers
             return CreatedAtAction(nameof(GetById), new { id = contato.id_contato }, contato);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id_contato}")]
         public IActionResult Update(int id_contato, [FromBody] Contato contato)
         {
             if (id_contato != contato.id_contato)
