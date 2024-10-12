@@ -19,6 +19,7 @@ builder.Services.AddScoped<IContatoService, ContatoService>();
 
 // Adiciona suporte a controladores
 builder.Services.AddControllers();
+builder.Services.AddRazorPages();
 
 // Configuração do Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -38,6 +39,7 @@ app.UseAuthorization();
 
 // Mapeia os controladores
 app.MapControllers();
+app.MapRazorPages();
 
 // Configura as portas para escutar
 //app.Urls.Clear();
