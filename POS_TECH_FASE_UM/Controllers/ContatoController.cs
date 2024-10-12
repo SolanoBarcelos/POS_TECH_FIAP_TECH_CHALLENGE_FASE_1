@@ -7,7 +7,7 @@ using POS_TECH_FASE_UM.Models;
 namespace POS_TECH_FASE_UM.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/contatos")]
     public class ContatoController : ControllerBase
     {
         private readonly IContatoService _contatoService;
@@ -17,12 +17,14 @@ namespace POS_TECH_FASE_UM.Controllers
             _contatoService = contatoService;
         }
 
+        // GET: api/contatos
         [HttpGet]
         public IActionResult GetAll()
         {
             return Ok(_contatoService.GetAllContatos());
         }
 
+        // GET: api/contatos/{id_contato}
         [HttpGet("{id_contato}")]
         public IActionResult GetById(int id_contato)
         {
@@ -33,19 +35,22 @@ namespace POS_TECH_FASE_UM.Controllers
             return Ok(contato);
         }
 
+        // GET: api/contatos/ddd/{ddd}
         [HttpGet("ddd/{ddd}")]
         public IActionResult GetByDDD(string ddd)
         {
             return Ok(_contatoService.GetContatosByDDD(ddd));
         }
 
+        // POST: api/contatos
         [HttpPost]
         public IActionResult Create([FromBody] Contato contato)
         {
             _contatoService.AddContato(contato);
-            return CreatedAtAction(nameof(GetById), new { id = contato.id_contato }, contato);
+            return CreatedAtAction(nameof(GetById), new { id_contato = contato.id_contato }, contato);
         }
 
+        // PUT: api/contatos/{id_contato}
         [HttpPut("{id_contato}")]
         public IActionResult Update(int id_contato, [FromBody] Contato contato)
         {
@@ -56,6 +61,7 @@ namespace POS_TECH_FASE_UM.Controllers
             return NoContent();
         }
 
+        // DELETE: api/contatos/{id}
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
