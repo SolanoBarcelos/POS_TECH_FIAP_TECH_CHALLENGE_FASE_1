@@ -48,8 +48,7 @@ app.MapControllers();
 app.MapRazorPages();
 
 // Configura as portas para escutar
-// app.Urls.Clear();
-// app.Urls.Add("http://0.0.0.0:5000");
+app.Urls.Add("http://0.0.0.0:7070");
 
 // Executa a aplicação
 app.Run();
