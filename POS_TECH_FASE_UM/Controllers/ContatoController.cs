@@ -17,14 +17,24 @@ namespace POS_TECH_FASE_UM.Controllers
             _contatoService = contatoService;
         }
 
-        // GET: api/contatos
+        // GET: api/contatos/up
+        // Verifica se a API está no ar
+        [HttpGet("up")]
+        public IActionResult Up()
+        {
+            return Ok("API is running");
+        }
+
+        // GET: api/contatos/GetAll
+        // Retorna todos os contatos
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
             return Ok(_contatoService.GetAllContatos());
         }
 
-        // GET: api/contatos/{id_contato}
+        // GET: api/contatos/GetById/{id_contato}
+        // Retorna um contato específico pelo ID
         [HttpGet("GetById/{id_contato}")]
         public IActionResult GetById(int id_contato)
         {
@@ -35,7 +45,8 @@ namespace POS_TECH_FASE_UM.Controllers
             return Ok(contato);
         }
 
-        // GET: api/contatos/ddd/{ddd}
+        // GET: api/contatos/GetContatosByDDD/{ddd}
+        // Retorna todos os contatos pelo DDD informado
         [HttpGet("GetContatosByDDD/{ddd}")]
         public IActionResult GetByDDD(string ddd)
         {
@@ -43,6 +54,7 @@ namespace POS_TECH_FASE_UM.Controllers
         }
 
         // POST: api/contatos
+        // Cria um novo contato com ID incrementado automaticamente
         [HttpPost]
         public IActionResult Create([FromBody] Contato contato)
         {
@@ -50,18 +62,36 @@ namespace POS_TECH_FASE_UM.Controllers
             return CreatedAtAction(nameof(GetById), new { id_contato = contato.id_contato }, contato);
         }
 
-        // PUT: api/contatos/{id_contato}
-        [HttpPut("Update/{id_contato}")]
+        // PATCH: api/contatos/Update/{id_contato}
+        // Atualiza parcialmente um contato existente pelo ID
+        [HttpPatch("Update/{id_contato}")]
         public IActionResult Update(int id_contato, [FromBody] Contato contato)
         {
-            if (id_contato != contato.id_contato)
-                return BadRequest();
+            var existingContato = _contatoService.GetContatoById(id_contato);
+            if (existingContato == null)
+                return NotFound();
 
-            _contatoService.UpdateContato(contato);
+            // Atualiza somente os campos que foram enviados na requisição
+            if (!string.IsNullOrEmpty(contato.nome_contato))
+            {
+                existingContato.nome_contato = contato.nome_contato;
+            }
+
+            if (!string.IsNullOrEmpty(contato.telefone_contato))
+            {
+                existingContato.telefone_contato = contato.telefone_contato;
+            }
+
+            if (!string.IsNullOrEmpty(contato.email_contato))
+            {
+                existingContato.email_contato = contato.email_contato;
+            }
+
+            _contatoService.UpdateContato(existingContato);
             return NoContent();
         }
-
-        // DELETE: api/contatos/{id}
+        // DELETE: api/contatos/Delete/{id}
+        // Exclui um contato pelo ID
         [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {

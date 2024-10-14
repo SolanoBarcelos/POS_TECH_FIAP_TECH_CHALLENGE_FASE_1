@@ -39,15 +39,52 @@ namespace POS_TECH_FASE_UM.Service
             _repository.Insert(contato);
         }
 
-        public void UpdateContato(Contato contato)
+        public void UpdateContato(Contato existingContato)
         {
-            ValidateContato(contato);
-            _repository.Update(contato);
-        }
+            var id_contato = existingContato.id_contato;
+            var validaContato = GetContatoById(id_contato);
 
+            ValidateContato(existingContato);
+
+            // Atualiza somente os campos que foram enviados na requisição
+            if (!string.IsNullOrEmpty(existingContato.nome_contato))
+            {
+                existingContato.nome_contato = validaContato.nome_contato;
+            }
+
+            if (!string.IsNullOrEmpty(existingContato.telefone_contato))
+            {
+                existingContato.telefone_contato = validaContato.telefone_contato;
+            }
+
+            if (!string.IsNullOrEmpty(existingContato.email_contato))
+            {
+                existingContato.email_contato = validaContato.email_contato;
+            }
+
+            
+            ValidateUpdateContato(existingContato);            
+            _repository.Update(existingContato);
+        }
+    
         public bool DeleteContato(int id_contato)
         {
             return _repository.Delete(id_contato);
+        }
+
+        private void ValidateUpdateContato(Contato existingContato)
+        {
+            if (!IsValidEmail(existingContato.email_contato))
+            {
+                throw new ArgumentException("E-mail inválido.");
+            }
+
+            if (!IsValidTelefone(existingContato.telefone_contato))
+            {
+                throw new ArgumentException("Telefone inválido.");
+
+            }
+
         }
 
         private void ValidateContato(Contato contato)
@@ -65,7 +102,7 @@ namespace POS_TECH_FASE_UM.Service
             if (!IsValidTelefone(contato.telefone_contato))
             {
                 throw new ArgumentException("Telefone inválido.");
-                
+
             }
         }
 
@@ -78,6 +115,6 @@ namespace POS_TECH_FASE_UM.Service
         {
             var regex = new Regex(@"^\d{11}$");
             return regex.IsMatch(telefone);
-        }       
+        }
     }
 }

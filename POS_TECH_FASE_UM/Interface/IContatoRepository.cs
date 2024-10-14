@@ -8,7 +8,7 @@ namespace POS_TECH_FASE_UM.Interface
         Contato GetById(int id_contato);
         IEnumerable<Contato> GetByDDD(string ddd);
         void Insert(Contato contato);
-        void Update(Contato contato);
+        void Update(Contato updatedContato);
         bool Delete(int idContato);
     }
 }

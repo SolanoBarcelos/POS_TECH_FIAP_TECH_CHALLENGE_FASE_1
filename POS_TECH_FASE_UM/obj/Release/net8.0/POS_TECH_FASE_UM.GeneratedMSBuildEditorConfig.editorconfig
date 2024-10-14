@@ -17,23 +17,3 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\git\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\POS_TECH_FASE_UM
 build_property._RazorSourceGeneratorDebug = 
-
-[C:/git/POS_TECH_FIAP_TECH_CHALLENGE_FASE_1/POS_TECH_FASE_UM/Pages/Contatos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/git/POS_TECH_FIAP_TECH_CHALLENGE_FASE_1/POS_TECH_FASE_UM/Pages/Contatos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/git/POS_TECH_FIAP_TECH_CHALLENGE_FASE_1/POS_TECH_FASE_UM/Pages/Contatos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/git/POS_TECH_FIAP_TECH_CHALLENGE_FASE_1/POS_TECH_FASE_UM/Pages/Contatos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/git/POS_TECH_FIAP_TECH_CHALLENGE_FASE_1/POS_TECH_FASE_UM/Pages/Contatos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 

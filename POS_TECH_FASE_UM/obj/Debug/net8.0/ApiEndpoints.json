@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
-    "Method": "GetAll",
-    "RelativePath": "api/contatos",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "Create",
     "RelativePath": "api/contatos",
     "HttpMethod": "POST",
@@ -27,45 +17,8 @@
   },
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
-    "Method": "GetById",
-    "RelativePath": "api/contatos/{id_contato}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id_contato",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
-    "Method": "Update",
-    "RelativePath": "api/contatos/{id_contato}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id_contato",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "contato",
-        "Type": "POS_TECH_FASE_UM.Models.Contato",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "Delete",
-    "RelativePath": "api/contatos/{id}",
+    "RelativePath": "api/contatos/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -80,8 +33,34 @@
   },
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "GetAll",
+    "RelativePath": "api/contatos/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "GetById",
+    "RelativePath": "api/contatos/GetById/{id_contato}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_contato",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "GetByDDD",
-    "RelativePath": "api/contatos/ddd/{ddd}",
+    "RelativePath": "api/contatos/GetContatosByDDD/{ddd}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -89,6 +68,37 @@
       {
         "Name": "ddd",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "Up",
+    "RelativePath": "api/contatos/up",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
+    "Method": "Update",
+    "RelativePath": "api/contatos/Update/{id_contato}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_contato",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "contato",
+        "Type": "POS_TECH_FASE_UM.Models.Contato",
         "IsRequired": true
       }
     ],

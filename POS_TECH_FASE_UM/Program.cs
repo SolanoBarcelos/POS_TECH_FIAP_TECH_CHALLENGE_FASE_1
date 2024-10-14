@@ -18,8 +18,8 @@ builder.Services.AddScoped<IDbConnection>(sp =>
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
 builder.Services.AddScoped<IContatoService, ContatoService>();
 
-// Adiciona suporte a controladores
-builder.Services.AddControllers();
+// Adiciona suporte a controladores com NewtonsoftJson
+builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddRazorPages();
 
 // Configuração do Swagger
@@ -38,7 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection(); // Descomente se precisar de HTTPS
+// app.UseHttpsRedirection();
 app.UseMetricServer();
 app.UseHttpMetrics();
 app.UseAuthorization();

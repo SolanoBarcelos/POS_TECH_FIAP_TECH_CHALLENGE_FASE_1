@@ -26,7 +26,6 @@
             //return _connection.Get<Contato>(id_contato);
             var query = "SELECT * FROM Contatos WHERE id_contato = @id_contato";
             return _connection.QuerySingleOrDefault<Contato>(query, new { id_contato });
-
         }
 
         public IEnumerable<Contato> GetByDDD(string ddd)
@@ -37,6 +36,13 @@
 
         public void Insert(Contato contato)
         {
+            // Pega o último contato do banco de dados
+            var ultimoContatoQuery = "SELECT * FROM contatos ORDER BY id_contato DESC LIMIT 1";
+            var ultimoContato = _connection.QuerySingleOrDefault<Contato>(ultimoContatoQuery);
+
+            // Incrementa o ID do novo contato baseado no último ID encontrado
+            contato.id_contato = (ultimoContato != null) ? ultimoContato.id_contato + 1 : 1;
+
             _connection.Insert(contato);
         }
 

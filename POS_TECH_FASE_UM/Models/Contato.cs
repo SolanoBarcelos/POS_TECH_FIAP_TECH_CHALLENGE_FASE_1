@@ -10,7 +10,7 @@ namespace POS_TECH_FASE_UM.Models
     public class Contato
     {
         [ExplicitKey]
-        [Column("id_contato")]  
+        [Column("id_contato")]
         public int id_contato { get; set; }
 
         [Column("nome_contato")]
