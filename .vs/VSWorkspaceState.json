@@ -4,8 +4,11 @@
     "\\POS_TECH_FASE_UM",
     "\\POS_TECH_FASE_UM\\Controllers",
     "\\POS_TECH_FASE_UM\\Interface",
-    "\\POS_TECH_FASE_UM\\Models"
+    "\\POS_TECH_FASE_UM\\Models",
+    "\\POS_TECH_FASE_UM\\Repository",
+    "\\POS_TECH_FASE_UM\\Service",
+    "\\TESTES_POS_TECH_FASE_UM"
   ],
-  "SelectedNode": "\\POS_TECH_FASE_UM.sln",
+  "SelectedNode": "\\TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
   "PreviewInSolutionExplorer": false
 }
