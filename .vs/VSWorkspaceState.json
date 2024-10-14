@@ -9,6 +9,6 @@
     "\\POS_TECH_FASE_UM\\Service",
     "\\TESTES_POS_TECH_FASE_UM"
   ],
-  "SelectedNode": "\\POS_TECH_FASE_UM\\appsettings.json",
+  "SelectedNode": "\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
   "PreviewInSolutionExplorer": false
 }

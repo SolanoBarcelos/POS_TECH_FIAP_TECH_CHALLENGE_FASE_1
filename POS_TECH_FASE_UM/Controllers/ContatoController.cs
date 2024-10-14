@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using POS_TECH_FASE_UM.DTO;
 using POS_TECH_FASE_UM.Interface;
 using POS_TECH_FASE_UM.Models;
+using System.Net.Mail;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -65,31 +67,21 @@ namespace POS_TECH_FASE_UM.Controllers
         // PATCH: api/contatos/Update/{id_contato}
         // Atualiza parcialmente um contato existente pelo ID
         [HttpPatch("Update/{id_contato}")]
-        public IActionResult Update(int id_contato, [FromBody] Contato contato)
+        public IActionResult Update(int id_contato, [FromBody] ContatoDTO contatoDto)
         {
-            var existingContato = _contatoService.GetContatoById(id_contato);
-            if (existingContato == null)
-                return NotFound();
+            var dadosContato = _contatoService.GetContatoById(id_contato);
+            if (dadosContato == null)
+                return NotFound(new { message = "Contato não encontrado." });
 
-            // Atualiza somente os campos que foram enviados na requisição
-            if (!string.IsNullOrEmpty(contato.nome_contato))
+            var contatoAtualizado = _contatoService.UpdateContato(id_contato, contatoDto);
+
+            return Ok(new
             {
-                existingContato.nome_contato = contato.nome_contato;
-            }
-
-            if (!string.IsNullOrEmpty(contato.telefone_contato))
-            {
-                existingContato.telefone_contato = contato.telefone_contato;
-            }
-
-            if (!string.IsNullOrEmpty(contato.email_contato))
-            {
-                existingContato.email_contato = contato.email_contato;
-            }
-
-            _contatoService.UpdateContato(existingContato);
-            return NoContent();
+                message = "Contato atualizado com sucesso.",
+                contato = contatoAtualizado
+            });
         }
+
         // DELETE: api/contatos/Delete/{id}
         // Exclui um contato pelo ID
         [HttpDelete("Delete/{id}")]
@@ -98,9 +90,9 @@ namespace POS_TECH_FASE_UM.Controllers
             var result = _contatoService.DeleteContato(id);
             if (result)
             {
-                return Ok();
+                return Ok(new { message = "Contato deletado com sucesso." });
             }
-            return NotFound();
+            return NotFound(new { message = "Contato não encontrado." });
         }
     }
 }

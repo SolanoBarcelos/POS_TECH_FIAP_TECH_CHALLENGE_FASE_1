@@ -35,32 +35,32 @@ namespace TESTES_POS_TECH_FASE_UM
             Assert.Equal(expectedIsValid, isValid);
         }
 
-        [Theory]
-        [InlineData("barbara@email.com", "12345678901", true)]
-        [InlineData("invalid-email", "12345678901", false)]
-        [InlineData("debora@email.com", "1234567890", false)]
-        [InlineData("", "", false)]
-        public void ValidateUpdateContato_ValidatesInputCorrectly(string email, string telefone, bool expectedIsValid)
-        {
-            var contato = new Contato
-            {
-                email_contato = email,
-                telefone_contato = telefone
-            };
+        //[Theory]
+        //[InlineData("barbara@email.com", "12345678901", true)]
+        //[InlineData("invalid-email", "12345678901", false)]
+        //[InlineData("debora@email.com", "1234567890", false)]
+        //[InlineData("", "", false)]
+        //public void ValidateUpdateContato_ValidatesInputCorrectly(string email, string telefone, bool expectedIsValid)
+        //{
+        //    var contato = new Contato
+        //    {
+        //        email_contato = email,
+        //        telefone_contato = telefone
+        //    };
 
-            var isValid = true;
+        //    var isValid = true;
 
-            try
-            {
-                ValidateUpdateContato(contato);
-            }
-            catch (ArgumentException)
-            {
-                isValid = false;
-            }
+        //    try
+        //    {
+        //        ValidateUpdateContato(contato);
+        //    }
+        //    catch (ArgumentException)
+        //    {
+        //        isValid = false;
+        //    }
 
-            Assert.Equal(expectedIsValid, isValid);
-        }
+        //    Assert.Equal(expectedIsValid, isValid);
+        //}
 
         private void ValidateContato(Contato contato)
         {
@@ -80,18 +80,18 @@ namespace TESTES_POS_TECH_FASE_UM
             }
         }
 
-        private void ValidateUpdateContato(Contato existingContato)
-        {
-            if (!IsValidEmail(existingContato.email_contato))
-            {
-                throw new ArgumentException("E-mail inválido.");
-            }
+        //private void ValidateUpdateContato(Contato existingContato)
+        //{
+        //    if (!IsValidEmail(existingContato.email_contato))
+        //    {
+        //        throw new ArgumentException("E-mail inválido.");
+        //    }
 
-            if (!IsValidTelefone(existingContato.telefone_contato))
-            {
-                throw new ArgumentException("Telefone inválido.");
-            }
-        }
+        //    if (!IsValidTelefone(existingContato.telefone_contato))
+        //    {
+        //        throw new ArgumentException("Telefone inválido.");
+        //    }
+        //}
 
         private bool IsValidEmail(string email)
         {

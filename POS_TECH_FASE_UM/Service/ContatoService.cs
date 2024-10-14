@@ -1,4 +1,5 @@
-﻿using POS_TECH_FASE_UM.Interface;
+﻿using POS_TECH_FASE_UM.DTO;
+using POS_TECH_FASE_UM.Interface;
 using POS_TECH_FASE_UM.Models;
 using System.Text.RegularExpressions;
 
@@ -35,74 +36,92 @@ namespace POS_TECH_FASE_UM.Service
 
         public void AddContato(Contato contato)
         {
-            ValidateContato(contato);
+            ValidateContato(contato, isPartialUpdate: false);
+
             _repository.Insert(contato);
         }
 
-        public void UpdateContato(Contato existingContato)
+        public Contato UpdateContato(int id_contato, ContatoDTO contatoDto)
         {
-            var id_contato = existingContato.id_contato;
+    
             var validaContato = GetContatoById(id_contato);
 
-            ValidateContato(existingContato);
+            if (validaContato == null)
+            {
+                throw new Exception("Contato não encontrado");
+            }
 
             // Atualiza somente os campos que foram enviados na requisição
-            if (!string.IsNullOrEmpty(existingContato.nome_contato))
+            if (!string.IsNullOrEmpty(contatoDto.nome_contato))
             {
-                existingContato.nome_contato = validaContato.nome_contato;
+                validaContato.nome_contato = contatoDto.nome_contato;
             }
 
-            if (!string.IsNullOrEmpty(existingContato.telefone_contato))
+            if (!string.IsNullOrEmpty(contatoDto.telefone_contato))
             {
-                existingContato.telefone_contato = validaContato.telefone_contato;
+                validaContato.telefone_contato = contatoDto.telefone_contato;
             }
 
-            if (!string.IsNullOrEmpty(existingContato.email_contato))
+            if (!string.IsNullOrEmpty(contatoDto.email_contato))
             {
-                existingContato.email_contato = validaContato.email_contato;
+                validaContato.email_contato = contatoDto.email_contato;
             }
 
-            
-            ValidateUpdateContato(existingContato);            
-            _repository.Update(existingContato);
+            // Valida o objeto atualizado
+            ValidateContato(validaContato, isPartialUpdate: true);
+
+            // Atualiza o registro no banco de dados
+            _repository.Update(validaContato);
+
+            // Retorna o objeto contato atualizado
+            return validaContato;
         }
-    
+
+
         public bool DeleteContato(int id_contato)
         {
             return _repository.Delete(id_contato);
         }
 
-        private void ValidateUpdateContato(Contato existingContato)
+        //private void ValidateUpdateContato(Contato existingContato)
+        //{
+        //    if (!IsValidEmail(existingContato.email_contato))
+        //    {
+        //        throw new ArgumentException("E-mail inválido.");
+        //    }
+
+        //    if (!IsValidTelefone(existingContato.telefone_contato))
+        //    {
+        //        throw new ArgumentException("Telefone inválido.");
+
+        //    }
+
+        //}
+
+        private void ValidateContato(Contato contato, bool isPartialUpdate = false)
         {
-            if (!IsValidEmail(existingContato.email_contato))
+            if (!isPartialUpdate || !string.IsNullOrEmpty(contato.nome_contato))
             {
-                throw new ArgumentException("E-mail inválido.");
+                if (string.IsNullOrEmpty(contato.nome_contato))
+                {
+                    throw new ArgumentException("Nome do contato é obrigatório.");
+                }
             }
 
-            if (!IsValidTelefone(existingContato.telefone_contato))
+            if (!isPartialUpdate || !string.IsNullOrEmpty(contato.email_contato))
             {
-                throw new ArgumentException("Telefone inválido.");
-
+                if (!IsValidEmail(contato.email_contato))
+                {
+                    throw new ArgumentException("E-mail inválido.");
+                }
             }
 
-        }
-
-        private void ValidateContato(Contato contato)
-        {
-            if (string.IsNullOrEmpty(contato.nome_contato))
+            if (!isPartialUpdate || !string.IsNullOrEmpty(contato.telefone_contato))
             {
-                throw new ArgumentException("Nome do contato é obrigatório.");
-            }
-
-            if (!IsValidEmail(contato.email_contato))
-            {
-                throw new ArgumentException("E-mail inválido.");
-            }
-
-            if (!IsValidTelefone(contato.telefone_contato))
-            {
-                throw new ArgumentException("Telefone inválido.");
-
+                if (!IsValidTelefone(contato.telefone_contato))
+                {
+                    throw new ArgumentException("Telefone inválido.");
+                }
             }
         }
 

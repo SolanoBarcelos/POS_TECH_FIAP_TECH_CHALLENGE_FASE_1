@@ -97,8 +97,8 @@
         "IsRequired": true
       },
       {
-        "Name": "contato",
-        "Type": "POS_TECH_FASE_UM.Models.Contato",
+        "Name": "contatoDto",
+        "Type": "POS_TECH_FASE_UM.DTO.ContatoDTO",
         "IsRequired": true
       }
     ],
