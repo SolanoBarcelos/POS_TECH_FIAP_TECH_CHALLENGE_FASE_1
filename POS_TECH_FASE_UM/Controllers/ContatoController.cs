@@ -18,14 +18,14 @@ namespace POS_TECH_FASE_UM.Controllers
         }
 
         // GET: api/contatos
-        [HttpGet]
+        [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
             return Ok(_contatoService.GetAllContatos());
         }
 
         // GET: api/contatos/{id_contato}
-        [HttpGet("{id_contato}")]
+        [HttpGet("GetById/{id_contato}")]
         public IActionResult GetById(int id_contato)
         {
             var contato = _contatoService.GetContatoById(id_contato);
@@ -36,7 +36,7 @@ namespace POS_TECH_FASE_UM.Controllers
         }
 
         // GET: api/contatos/ddd/{ddd}
-        [HttpGet("ddd/{ddd}")]
+        [HttpGet("GetContatosByDDD/{ddd}")]
         public IActionResult GetByDDD(string ddd)
         {
             return Ok(_contatoService.GetContatosByDDD(ddd));
@@ -51,7 +51,7 @@ namespace POS_TECH_FASE_UM.Controllers
         }
 
         // PUT: api/contatos/{id_contato}
-        [HttpPut("{id_contato}")]
+        [HttpPut("Update/{id_contato}")]
         public IActionResult Update(int id_contato, [FromBody] Contato contato)
         {
             if (id_contato != contato.id_contato)
@@ -62,7 +62,7 @@ namespace POS_TECH_FASE_UM.Controllers
         }
 
         // DELETE: api/contatos/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             var result = _contatoService.DeleteContato(id);

@@ -11,44 +11,44 @@
       "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\interface\\icontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\interface\\icontatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\contatotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\contatotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\service\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\service\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\testes_pos_tech_fase_um.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\testes_pos_tech_fase_um.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\interface\\icontatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\interface\\icontatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\pages\\contatos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\pages\\contatos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,20 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IContatoRepository.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\Interface\\IContatoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T15:48:15.958Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -80,82 +68,36 @@
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "RelativeToolTip": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowBkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:08:14.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Program.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:03:06.479Z",
+              "WhenOpened": "2024-10-13T02:41:26.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Contato.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Models\\Contato.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Models\\Contato.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Models\\Contato.cs",
               "RelativeToolTip": "POS_TECH_FASE_UM\\Models\\Contato.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:51:29.897Z"
+              "WhenOpened": "2024-10-12T17:48:26.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TESTES_POS_TECH_FASE_UM.csproj",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
-              "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
-              "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-12T18:44:23.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Contatotests.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
-              "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
-              "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\Contatotests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:32:45.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContatoService.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAADUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:01:40.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IContatoService.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:00:42.134Z"
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\appsettings.json",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-12T17:45:39.499Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -165,45 +107,114 @@
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
               "RelativeToolTip": "POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAewCcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:47:29.07Z"
+              "WhenOpened": "2024-10-12T17:42:01.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Program.cs",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T16:35:10.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml.cs",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T16:34:08.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T16:33:32.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T16:32:14.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Details.cshtml.cs",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Details.cshtml.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Details.cshtml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T16:30:46.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml.cs",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:50:47.535Z"
+              "WhenOpened": "2024-10-12T16:30:27.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\appsettings.json",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-12T16:05:57.254Z"
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml.cs",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml.cs",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T16:30:15.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\WeatherForecast.cs",
-              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\WeatherForecast.cs",
-              "RelativeToolTip": "POS_TECH_FASE_UM\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:50:43.411Z"
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml",
+              "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml",
+              "RelativeToolTip": "POS_TECH_FASE_UM\\Pages\\Contatos\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T16:29:30.629Z",
+              "EditorCaption": ""
             }
           ]
         }

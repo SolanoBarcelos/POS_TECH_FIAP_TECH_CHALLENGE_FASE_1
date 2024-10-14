@@ -2,7 +2,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "GetAll",
-    "RelativePath": "api/Contato",
+    "RelativePath": "api/contatos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "Create",
-    "RelativePath": "api/Contato",
+    "RelativePath": "api/contatos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "GetById",
-    "RelativePath": "api/Contato/{id_contato}",
+    "RelativePath": "api/contatos/{id_contato}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "Update",
-    "RelativePath": "api/Contato/{id_contato}",
+    "RelativePath": "api/contatos/{id_contato}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -65,7 +65,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "Delete",
-    "RelativePath": "api/Contato/{id}",
+    "RelativePath": "api/contatos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -81,7 +81,7 @@
   {
     "ContainingType": "POS_TECH_FASE_UM.Controllers.ContatoController",
     "Method": "GetByDDD",
-    "RelativePath": "api/Contato/ddd/{ddd}",
+    "RelativePath": "api/contatos/ddd/{ddd}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

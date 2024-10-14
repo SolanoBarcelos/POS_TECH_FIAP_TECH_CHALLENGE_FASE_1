@@ -3,8 +3,9 @@
     "",
     "\\POS_TECH_FASE_UM",
     "\\POS_TECH_FASE_UM\\Controllers",
+    "\\POS_TECH_FASE_UM\\Interface",
     "\\POS_TECH_FASE_UM\\Models"
   ],
-  "SelectedNode": "\\POS_TECH_FASE_UM\\Program.cs",
+  "SelectedNode": "\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
   "PreviewInSolutionExplorer": false
 }

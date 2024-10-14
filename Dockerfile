@@ -30,7 +30,6 @@ COPY --from=build /app/publish .
 
 # Expondo as portas que você definiu
 EXPOSE 5000
-EXPOSE 44318
 
 # Definir o comando de entrada para a aplicação principal
 ENTRYPOINT ["dotnet", "POS_TECH_FASE_UM.dll"]

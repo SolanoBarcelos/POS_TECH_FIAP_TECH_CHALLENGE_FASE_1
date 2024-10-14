@@ -1,3 +1,4 @@
+using Prometheus;
 using Npgsql;
 using POS_TECH_FASE_UM.Interface;
 using POS_TECH_FASE_UM.Service;
@@ -25,6 +26,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuração do Prometheus
+builder.Services.UseHttpClientMetrics();
+
 var app = builder.Build();
 
 // Configuração do pipeline de requisições HTTP
@@ -35,6 +39,8 @@ if (app.Environment.IsDevelopment())
 }
 
 // app.UseHttpsRedirection(); // Descomente se precisar de HTTPS
+app.UseMetricServer();
+app.UseHttpMetrics();
 app.UseAuthorization();
 
 // Mapeia os controladores
@@ -42,8 +48,8 @@ app.MapControllers();
 app.MapRazorPages();
 
 // Configura as portas para escutar
-//app.Urls.Clear();
-//app.Urls.Add("http://0.0.0.0:5000");
+// app.Urls.Clear();
+// app.Urls.Add("http://0.0.0.0:5000");
 
 // Executa a aplicação
 app.Run();

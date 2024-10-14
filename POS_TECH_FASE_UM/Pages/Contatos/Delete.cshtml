@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model POS_TECH_FASE_UM.Pages.Contatos.DeleteModel
+@{
+    ViewData["Title"] = "Deletar Contato";
+}
+
+<h1>Deletar Contato</h1>
+
+<h4>Contato</h4>
+<hr />
+<div>
+    <h4>Tem certeza que deseja deletar este contato?</h4>
+    <div>
+        <h4>Nome: @Model.Contato.nome_contato</h4>
+        <h4>Telefone: @Model.Contato.telefone_contato</h4>
+        <h4>Email: @Model.Contato.email_contato</h4>
+    </div>
+    <form method="post">
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Cancelar</a>
+    </form>
+</div>
