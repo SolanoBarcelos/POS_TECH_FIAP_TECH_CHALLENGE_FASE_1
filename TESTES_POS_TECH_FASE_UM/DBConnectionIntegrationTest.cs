@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Dapper.Contrib.Extensions;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TESTES_POS_TECH_FASE_UM.DataBaseIntegrationTest
+namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
 {
     public class DBConnectionIntegrationTest : IClassFixture<WebApplicationFactory<Program>>
     {

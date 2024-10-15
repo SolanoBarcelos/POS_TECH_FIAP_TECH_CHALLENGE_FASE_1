@@ -2,9 +2,9 @@ using POS_TECH_FASE_UM.Models;
 using System.Text.RegularExpressions;
 using Xunit;
 
-namespace TESTES_POS_TECH_FASE_UM.ValidateContatoUnittests
+namespace TESTES_POS_TECH_FASE_UM.ValidateTelefoneEmailUnitTest
 {
-    public class ValidateContatoUnittest
+    public class ValidateTelefoneEmailUnitTest
     {
         [Theory]
         [InlineData("Barbara", "barbara@email.com", "12345678901", true)]
