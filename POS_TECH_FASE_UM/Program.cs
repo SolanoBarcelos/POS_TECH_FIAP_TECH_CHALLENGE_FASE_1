@@ -1,3 +1,6 @@
+// Classe Program para configurar a URL
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Prometheus;
 using Npgsql;
 using POS_TECH_FASE_UM.Interface;
@@ -5,7 +8,7 @@ using POS_TECH_FASE_UM.Service;
 using POS_TECH_FASE_UM.Repository;
 using System.Data;
 
-public class Program 
+public class Program
 {
     public static void Main(string[] args)
     {
@@ -18,7 +21,6 @@ public class Program
             return new NpgsqlConnection(connectionString);
         });
 
-    
         builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
         builder.Services.AddScoped<IContatoService, ContatoService>();
 
@@ -51,9 +53,11 @@ public class Program
         app.MapControllers();
         app.MapRazorPages();
 
-        // Configura as portas para escutar
-        app.Urls.Add("http://0.0.0.0:7070");
-
+        // Configura as portas para escutar somente em ambiente (Docker)
+        if (app.Environment.IsProduction())
+        {
+            app.Urls.Add("http://0.0.0.0:7070");
+        }
 
         app.Run();
     }

@@ -1,7 +1,6 @@
 # Etapa Base (Runtime)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 7070
 
 # Etapa de Build (SDK)
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
@@ -34,6 +33,9 @@ ENV ConnectionStrings__DefaultConnection="Host=db_pos_fase_1;Port=5432;Pooling=t
 
 # Copiar os arquivos da publicação para a imagem final
 COPY --from=publish /app/publish .
+
+# Expor a porta somente na imagem final
+EXPOSE 7070
 
 # Comando de entrada
 ENTRYPOINT ["dotnet", "POS_TECH_FASE_UM.dll"]
