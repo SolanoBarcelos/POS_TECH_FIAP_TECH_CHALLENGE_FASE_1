@@ -9,70 +9,70 @@ jobs:
   build:
     runs-on: windows-latest
 
-services:
-  postgres:
-    image: postgres:latest  # Use a versão do PostgreSQL que você precisa
-    ports:
-    - 5432:5432
-    env:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: db_pos_fase_1
-      options: > 
-       --health-cmd="pg_isready"
-        --health-interval=10s
-        --health-timeout=5s
-        --health-retries=5
-
+    services:
+      postgres:
+        image: postgres:latest
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: admin
+          POSTGRES_PASSWORD: 1234
+          POSTGRES_DB: db_pos_fase_1
+        options: >
+          --health-cmd "pg_isready -U admin"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
-    # 1. Fazer checkout do repositório
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      # 1. Fazer checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # 2. Configurar o .NET 8
-    - name: Set up .NET 8
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0.x
+      # 2. Configurar o .NET 8
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
 
-    - name: Wait for PostgreSQL to be ready
-      run: |
+      # 3. Esperar o PostgreSQL estar pronto
+      - name: Wait for PostgreSQL to be ready
+        run: |
           for i in {1..30}; do
-          if pg_isready -h "localhost" -U "test_user"; then
-          echo "PostgreSQL is ready!"
-          break
-          fi
-          echo "Waiting for PostgreSQL..."
-          sleep 2
-          done    
+            if pg_isready -h "localhost" -U "admin"; then
+              echo "PostgreSQL is ready!"
+              break
+            fi
+            echo "Waiting for PostgreSQL..."
+            sleep 2
+          done  
 
-    # 3. Restaurar dependências do projeto
-    - name: Restore dependencies
-      run: dotnet restore
+      # 4. Restaurar dependências do projeto
+      - name: Restore dependencies
+        run: dotnet restore
 
-    # 4. Construir o projeto
-    - name: Build the project
-      run: dotnet build --configuration Release --no-restore
+      # 5. Construir o projeto
+      - name: Build the project
+        run: dotnet build --configuration Release --no-restore
 
-    # 5. Rodar os testes com string de conexão de teste
-    - name: Run tests
-      env:
-        ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
-      run: dotnet test --no-build --verbosity normal
-      working-directory: ${{ github.workspace }}/TESTES_POS_TECH_FASE_UM
+      # 6. Rodar os testes com string de conexão de teste
+      - name: Run tests
+        env:
+          ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
+        run: dotnet test --no-build --verbosity normal
+        working-directory: ${{ github.workspace }}/TESTES_POS_TECH_FASE_UM
 
-    # 6. Logar no Docker Hub
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      # 7. Logar no Docker Hub
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    # 7. Construir a imagem Docker
-    - name: Build Docker image
-      run: docker build -t sfbarcelos/pos_tech_fase_um_image:latest .
+      # 8. Construir a imagem Docker
+      - name: Build Docker image
+        run: docker build -t sfbarcelos/pos_tech_fase_um_image:latest .
 
-    # 8. Fazer push da imagem para o Docker Hub
-    - name: Push Docker image to Docker Hub
-      run: docker push sfbarcelos/pos_tech_fase_um_image:latest
+      # 9. Fazer push da imagem para o Docker Hub
+      - name: Push Docker image to Docker Hub
+        run: docker push sfbarcelos/pos_tech_fase_um_image:latest
