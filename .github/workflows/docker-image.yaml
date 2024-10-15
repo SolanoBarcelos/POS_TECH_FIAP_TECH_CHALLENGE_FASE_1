@@ -4,11 +4,26 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
+
+services:
+  postgres:
+    image: postgres:latest  # Use a versão do PostgreSQL que você precisa
+    ports:
+    - 5432:5432
+    env:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db_pos_fase_1
+      options: > 
+       --health-cmd="pg_isready"
+        --health-interval=10s
+        --health-timeout=5s
+        --health-retries=5
+
 
     steps:
     # 1. Fazer checkout do repositório
@@ -20,6 +35,17 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
+
+    - name: Wait for PostgreSQL to be ready
+      run: |
+          for i in {1..30}; do
+          if pg_isready -h "localhost" -U "test_user"; then
+          echo "PostgreSQL is ready!"
+          break
+          fi
+          echo "Waiting for PostgreSQL..."
+          sleep 2
+          done    
 
     # 3. Restaurar dependências do projeto
     - name: Restore dependencies
