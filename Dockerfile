@@ -28,5 +28,12 @@ RUN dotnet publish "POS_TECH_FASE_UM/POS_TECH_FASE_UM.csproj" -c $BUILD_CONFIGUR
 # Etapa 2: Criar a imagem final de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
+
+# Definir a variável de ambiente para a string de conexão de produção
+ENV ConnectionStrings__DefaultConnection="Host=db_pos_fase_1;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
+
+# Copiar os arquivos da publicação para a imagem final
 COPY --from=publish /app/publish .
+
+# Comando de entrada
 ENTRYPOINT ["dotnet", "POS_TECH_FASE_UM.dll"]

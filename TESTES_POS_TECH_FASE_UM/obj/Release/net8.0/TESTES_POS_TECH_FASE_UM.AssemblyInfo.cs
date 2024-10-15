@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TESTES_POS_TECH_FASE_UM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d812a79a07f5f0b4e8ba96af83c8a9c1d211120f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f923db40939002efb99b0459caf842ef2da2160")]
 [assembly: System.Reflection.AssemblyProductAttribute("TESTES_POS_TECH_FASE_UM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TESTES_POS_TECH_FASE_UM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
