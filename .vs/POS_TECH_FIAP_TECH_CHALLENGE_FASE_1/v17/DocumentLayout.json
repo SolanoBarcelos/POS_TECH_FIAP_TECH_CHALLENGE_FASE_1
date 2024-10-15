@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Controllers\\ContatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Interface\\IContatoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Controllers\\ContatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Models\\Contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_TECH_FASE_UM\\Models\\Contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAABMAAAAAAAAAAAAqwB8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-14T19:01:44.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:01:44.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ContatoService.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
@@ -71,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ContatoRepository.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Repository\\ContatoRepository.cs",
@@ -83,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IContatoService.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Interface\\IContatoService.cs",
@@ -95,20 +94,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Program.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
               "RelativeToolTip": "POS_TECH_FASE_UM\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T23:44:47.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T23:44:47.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\appsettings.json",
@@ -116,20 +114,20 @@
               "RelativeToolTip": "POS_TECH_FASE_UM\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-13T23:42:49.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T23:42:49.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "ContatoController.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "RelativeToolTip": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T15:19:10.399Z"
+              "WhenOpened": "2024-10-12T15:19:10.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
