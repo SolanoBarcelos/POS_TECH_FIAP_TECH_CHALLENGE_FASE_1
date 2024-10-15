@@ -34,7 +34,7 @@ jobs:
       env:
         ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./TESTES_POS_TECH_FASE_UM
+      working-directory: ${{ github.workspace }}/TESTES_POS_TECH_FASE_UM
 
     # 6. Logar no Docker Hub
     - name: Log in to Docker Hub
