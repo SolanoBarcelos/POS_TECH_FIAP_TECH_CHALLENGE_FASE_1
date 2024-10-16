@@ -53,7 +53,7 @@ jobs:
           PGPASSWORD="1234" psql -h "localhost" -U "admin" -d "db_pos_fase_1" -c "
           CREATE TABLE contatos (
             id_contato,
-            nome_contato VARCHAR(100) NOT NULL,
+            nome_contato VARCHAR(100),
             telefone_contato VARCHAR(20),
             email_contato VARCHAR(100)
           );
