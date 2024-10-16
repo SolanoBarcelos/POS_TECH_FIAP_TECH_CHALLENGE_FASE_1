@@ -24,7 +24,8 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
             {
                 builder.ConfigureAppConfiguration((context, config) =>
                 {
-                    config.AddJsonFile("appsettings.json");
+                    // Carrega o arquivo de configurações apropriado para o ambiente de teste
+                    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                 });
 
                 builder.ConfigureServices(services =>
@@ -47,26 +48,19 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
 
             // Act & Assert
-            try
+            using (IDbConnection dbConnection = new NpgsqlConnection(connectionString))
             {
-                using (IDbConnection dbConnection = new NpgsqlConnection(connectionString))
+                await dbConnection.OpenAsync();
+
+                var contatos = await dbConnection.QueryAsync<Contato>("SELECT * FROM contatos");
+
+                Assert.NotNull(contatos);
+                Assert.NotEmpty(contatos);
+
+                foreach (var contato in contatos)
                 {
-                    dbConnection.Open();
-
-                    var contatos = await dbConnection.QueryAsync<Contato>("SELECT * FROM contatos");
-
-                    Assert.NotNull(contatos);
-                    Assert.NotEmpty(contatos);
-
-                    foreach (var contato in contatos)
-                    {
-                        Assert.True(contato.id_contato > 0);
-                    }
+                    Assert.True(contato.id_contato > 0);
                 }
-            }
-            catch (Exception ex)
-            {
-                Assert.Null(ex);
             }
         }
     }
