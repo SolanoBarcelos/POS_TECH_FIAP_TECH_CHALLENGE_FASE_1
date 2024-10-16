@@ -32,6 +32,9 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
                 {
                     // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
                 });
+
+                // Certifique-se de que o diretório de conteúdo seja apropriado para o ambiente
+                builder.UseContentRoot(AppContext.BaseDirectory);
             });
 
             // Obtendo o IConfiguration a partir do contêiner de serviços configurado
