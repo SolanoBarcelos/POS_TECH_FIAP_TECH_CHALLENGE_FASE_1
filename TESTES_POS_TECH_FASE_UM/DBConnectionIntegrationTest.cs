@@ -18,7 +18,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         private readonly WebApplicationFactory<Program> _factory;
         private readonly IConfiguration _configuration;
 
-        public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory, IConfiguration configuration)
+        public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory)
         {
             _factory = factory.WithWebHostBuilder(builder =>
             {
@@ -26,21 +26,24 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
                 {
                     config.AddJsonFile("appsettings.json");
                 });
-                
+
                 builder.ConfigureServices(services =>
                 {
                     // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
                 });
             });
-            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+
+            // Obtendo o IConfiguration a partir do contêiner de serviços configurado
+            using (var scope = _factory.Services.CreateScope())
+            {
+                _configuration = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+            }
         }
 
         [Fact]
         public async Task Can_Connect_To_Database_And_Get_All_Contatos()
         {
             // Arrange
-            var client = _factory.CreateClient();
-
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
 
             // Act & Assert
@@ -72,7 +75,6 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
     [Dapper.Contrib.Extensions.Table("contatos")]
     public class Contato
     {
-
         [Column("id_contato")]
         public int id_contato { get; set; }
 
@@ -80,7 +82,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         public required string nome_contato { get; set; }
 
         [Column("telefone_contato")]
-        public  string telefone_contato { get; set; }
+        public string telefone_contato { get; set; }
 
         [Column("email_contato")]
         public string email_contato { get; set; }
