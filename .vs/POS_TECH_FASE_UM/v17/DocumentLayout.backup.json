@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\upcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\upcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\dbconnectionintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\dbconnectionintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\pos_tech_fase_um\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56988B74-0D15-415E-81DB-98C302DC1FF2}|POS_TECH_FASE_UM\\POS_TECH_FASE_UM.csproj|solutionrelative:pos_tech_fase_um\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\dbconnectionintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\dbconnectionintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\upcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|solutionrelative:testes_pos_tech_fase_um\\upcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E816647-3CA6-4952-8AF1-7226B7125364}|TESTES_POS_TECH_FASE_UM\\TESTES_POS_TECH_FASE_UM.csproj|c:\\git\\pos_tech_fiap_tech_challenge_fase_1\\testes_pos_tech_fase_um\\validatetelefoneemailunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "DBConnectionIntegrationTest.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
               "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
@@ -74,7 +74,8 @@
               "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwA0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T02:36:23.195Z"
+              "WhenOpened": "2024-10-15T02:36:23.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,19 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UpControllerIntegrationTest.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
               "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
               "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T00:13:20.584Z"
+              "WhenOpened": "2024-10-15T00:13:20.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ContatoDTO.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\DTO\\ContatoDTO.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\DTO\\ContatoDTO.cs",
@@ -162,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ContatoService.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Service\\ContatoService.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Service\\ContatoService.cs",
@@ -174,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ContatoController.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Controllers\\ContatoController.cs",
@@ -186,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\appsettings.json",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\appsettings.json",
@@ -210,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\POS_TECH_FASE_UM\\Program.cs",
               "RelativeDocumentMoniker": "POS_TECH_FASE_UM\\Program.cs",
