@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Npgsql;
 using POS_TECH_FASE_UM;
 using Microsoft.Extensions.Configuration;
-using Dapper.Contrib.Extensions;
+using Microsoft.Extensions.DependencyInjection;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
@@ -22,7 +22,11 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         {
             _factory = factory.WithWebHostBuilder(builder =>
             {
-                builder.UseContentRoot("../../../../POS_TECH_FASE_UM");
+                builder.ConfigureAppConfiguration((context, config) =>
+                {
+                    config.AddJsonFile("appsettings.json");
+                });
+                
                 builder.ConfigureServices(services =>
                 {
                     // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
