@@ -18,7 +18,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         private readonly WebApplicationFactory<Program> _factory;
         private readonly IConfiguration _configuration;
 
-        public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory)
+        public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory, IConfiguration configuration)
         {
             _factory = factory.WithWebHostBuilder(builder =>
             {
@@ -28,6 +28,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
                     // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
                 });
             });
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
         [Fact]
@@ -45,13 +46,9 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
                 {
                     dbConnection.Open();
 
-
                     var contatos = await dbConnection.QueryAsync<Contato>("SELECT * FROM contatos");
 
-
                     Assert.NotNull(contatos);
-
-
                     Assert.NotEmpty(contatos);
 
                     foreach (var contato in contatos)
@@ -76,13 +73,12 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         public int id_contato { get; set; }
 
         [Column("nome_contato")]
-        public string nome_contato { get; set; }
+        public required string nome_contato { get; set; }
 
         [Column("telefone_contato")]
-        public string telefone_contato { get; set; }
+        public required string telefone_contato { get; set; }
 
         [Column("email_contato")]
-        public string email_contato { get; set; }
+        public required string email_contato { get; set; }
     }
 }
-
