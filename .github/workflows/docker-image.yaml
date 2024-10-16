@@ -52,13 +52,13 @@ jobs:
         run: |
           PGPASSWORD="1234" psql -h "localhost" -U "admin" -d "db_pos_fase_1" -c "
           CREATE TABLE contatos (
-            id_contato SERIAL PRIMARY KEY,
+            id_contato PRIMARY KEY,
             nome_contato VARCHAR(100) NOT NULL,
             telefone_contato VARCHAR(20),
             email_contato VARCHAR(100)
           );
-          INSERT INTO contatos (nome_contato, telefone_contato, email_contato) VALUES 
-          ('Usuário Teste', '123456789', 'usuarioteste@example.com');
+          INSERT INTO contatos (id_contato, nome_contato, telefone_contato, email_contato) VALUES 
+          ('1','Usuário Teste', '123456789', 'usuarioteste@example.com');
           "
 
       # 5. Restaurar dependências do projeto

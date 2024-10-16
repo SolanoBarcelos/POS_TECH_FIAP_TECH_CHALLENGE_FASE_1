@@ -72,7 +72,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
     [Dapper.Contrib.Extensions.Table("contatos")]
     public class Contato
     {
-        [ExplicitKey]
+
         [Column("id_contato")]
         public int id_contato { get; set; }
 
@@ -80,9 +80,9 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         public required string nome_contato { get; set; }
 
         [Column("telefone_contato")]
-        public required string telefone_contato { get; set; }
+        public  string telefone_contato { get; set; }
 
         [Column("email_contato")]
-        public required string email_contato { get; set; }
+        public string email_contato { get; set; }
     }
 }
