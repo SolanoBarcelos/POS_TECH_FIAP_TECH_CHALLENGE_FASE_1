@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
               "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\DBConnectionIntegrationTest.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:23:14.287Z",
               "EditorCaption": ""
@@ -93,7 +93,7 @@
               "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
               "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\UpControllerIntegrationTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:23:07.881Z",
               "EditorCaption": ""
@@ -106,7 +106,7 @@
               "RelativeDocumentMoniker": "TESTES_POS_TECH_FASE_UM\\ValidateTelefoneEmailUnitTest.cs",
               "ToolTip": "C:\\git\\POS_TECH_FIAP_TECH_CHALLENGE_FASE_1\\TESTES_POS_TECH_FASE_UM\\ValidateTelefoneEmailUnitTest.cs",
               "RelativeToolTip": "TESTES_POS_TECH_FASE_UM\\ValidateTelefoneEmailUnitTest.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:23:02.636Z",
               "EditorCaption": ""
@@ -205,8 +205,7 @@
               "RelativeToolTip": "POS_TECH_FASE_UM\\Models\\Contato.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T15:18:36.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-12T15:18:36.426Z"
             }
           ]
         }

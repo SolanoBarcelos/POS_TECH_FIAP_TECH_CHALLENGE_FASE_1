@@ -20,10 +20,14 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
 
         public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory)
         {
-            _factory = factory;
-
-
-            _configuration = _factory.Services.GetService(typeof(IConfiguration)) as IConfiguration;
+            _factory = factory.WithWebHostBuilder(builder =>
+            {
+                builder.UseContentRoot("../../../../POS_TECH_FASE_UM");
+                builder.ConfigureServices(services =>
+                {
+                    // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
+                });
+            });
         }
 
         [Fact]
