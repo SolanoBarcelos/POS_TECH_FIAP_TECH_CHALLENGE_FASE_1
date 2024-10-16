@@ -58,7 +58,7 @@ jobs:
             email_contato VARCHAR(100)
           );
           INSERT INTO contatos (nome_contato, telefone_contato, email_contato) VALUES 
-          ('Usuário Teste', '11955668877', 'usuarioteste@example.com');
+          ('Usuário Teste', '123456789', 'usuarioteste@example.com');
           "
 
       # 5. Restaurar dependências do projeto
@@ -76,17 +76,22 @@ jobs:
         run: dotnet test --no-build --verbosity normal
         working-directory: ${{ github.workspace }}/TESTES_POS_TECH_FASE_UM
 
-      # 8. Fazer login no Docker Hub
+      # 8. Rodar a aplicação localmente
+      - name: Executar a aplicação
+        run: dotnet run --no-build --configuration Release
+        working-directory: ${{ github.workspace }}/POS_TECH_FASE_UM
+
+      # 9. Fazer login no Docker Hub
       - name: Fazer login no Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # 9. Construir a imagem Docker
+      # 10. Construir a imagem Docker
       - name: Construir a imagem Docker
         run: docker build -t sfbarcelos/pos_tech_fase_um_image:latest .
 
-      # 10. Fazer push da imagem para o Docker Hub
+      # 11. Fazer push da imagem para o Docker Hub
       - name: Fazer push da imagem para o Docker Hub
         run: docker push sfbarcelos/pos_tech_fase_um_image:latest
