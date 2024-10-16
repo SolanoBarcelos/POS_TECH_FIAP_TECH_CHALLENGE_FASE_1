@@ -42,7 +42,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
         }
 
         [Fact]
-        public async Task Can_Connect_To_Database_And_Get_All_Contatos()
+        public void Can_Connect_To_Database_And_Get_All_Contatos()
         {
             // Arrange
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
@@ -50,9 +50,9 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
             // Act & Assert
             using (IDbConnection dbConnection = new NpgsqlConnection(connectionString))
             {
-                await dbConnection.OpenAsync();
+                dbConnection.Open();
 
-                var contatos = await dbConnection.QueryAsync<Contato>("SELECT * FROM contatos");
+                var contatos = dbConnection.Query<Contato>("SELECT * FROM contatos");
 
                 Assert.NotNull(contatos);
                 Assert.NotEmpty(contatos);
