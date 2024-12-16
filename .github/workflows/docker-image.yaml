@@ -29,13 +29,14 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v3
 
-      # 2. Configurar .NET 8 com diretório temporário para evitar erros de permissão
+      # 2. Configurar .NET 8 com diretório alternativo para evitar problemas de permissão
       - name: Configurar .NET 8
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
         env:
           DOTNET_ROOT: ${{ runner.temp }}/dotnet
+          DOTNET_INSTALL_DIR: ${{ runner.temp }}/dotnet
 
       # 3. Verificar se o Docker e .NET estão funcionando corretamente
       - name: Verificar Docker e .NET
