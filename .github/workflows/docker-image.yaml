@@ -40,7 +40,7 @@ jobs:
 
       # 3. Verificar se o Docker e .NET estão funcionando corretamente
       - name: Verificar Docker e .NET
-        shell: pwsh
+        shell: bash
         run: |
           Write-Host "Verificando Docker..."
           if (-not (Get-Command docker -ErrorAction SilentlyContinue)) {
