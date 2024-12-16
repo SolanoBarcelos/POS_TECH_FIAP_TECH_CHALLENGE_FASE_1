@@ -9,26 +9,53 @@ jobs:
   build:
     runs-on: self-hosted
 
-    steps:
-      # 1. Verificar dependências no runner self-hosted
-      - name: Verificar dependências no runner
-        run: |
-          echo "Verificando se PostgreSQL está rodando localmente..."
-          pg_isready -U admin || (echo "PostgreSQL não está rodando" && exit 1)
-          echo "Verificando se Docker está instalado..."
-          docker --version || (echo "Docker não está instalado" && exit 1)
-          echo "Verificando se .NET SDK está instalado..."
-          dotnet --version || (echo ".NET SDK não está instalado" && exit 1)
+    services:
+      postgres:
+        image: postgres:latest
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: admin
+          POSTGRES_PASSWORD: 1234
+          POSTGRES_DB: db_pos_fase_1
+        options: >-
+          --health-cmd="pg_isready -U admin" 
+          --health-interval=10s 
+          --health-timeout=5s 
+          --health-retries=5
 
-      # 2. Fazer checkout do repositório
+    steps:
+      # 1. Fazer checkout do repositório
       - name: Checkout do repositório
         uses: actions/checkout@v3
 
-      # 3. Configurar .NET 8
+      # 2. Configurar o .NET 8
       - name: Configurar .NET 8
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
+
+      # 3. Verificar se PostgreSQL, Docker e .NET estão instalados
+      - name: Verificar PostgreSQL, Docker e .NET
+        shell: pwsh
+        run: |
+          Write-Host "Verificando se PostgreSQL está rodando localmente..."
+          if (-not (pg_isready -U admin)) {
+              Write-Host "PostgreSQL não está rodando"
+              exit 1
+          }
+          
+          Write-Host "Verificando se Docker está instalado..."
+          if (-not (Get-Command docker -ErrorAction SilentlyContinue)) {
+              Write-Host "Docker não está instalado"
+              exit 1
+          }
+          
+          Write-Host "Verificando se .NET SDK está instalado..."
+          if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
+              Write-Host ".NET SDK não está instalado"
+              exit 1
+          }
 
       # 4. Restaurar dependências do projeto
       - name: Restaurar dependências
@@ -38,24 +65,29 @@ jobs:
       - name: Construir o projeto
         run: dotnet build --configuration Release --no-restore
 
-      # 6. Executar os testes
+      # 6. Executar os testes com a string de conexão de teste
       - name: Executar testes
         env:
-          ConnectionStrings__DefaultConnection: "Host=127.0.0.1;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
+          ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Pooling=true;Database=db_pos_fase_1;User Id=admin;Password=1234;"
         run: dotnet test --no-build --verbosity normal
         working-directory: ${{ github.workspace }}/TESTES_POS_TECH_FASE_UM
 
-      # 7. Fazer login no Docker Hub
+      # 7. Rodar a aplicação localmente
+      - name: Executar a aplicação
+        run: dotnet run --no-build --configuration Release
+        working-directory: ${{ github.workspace }}/POS_TECH_FASE_UM
+
+      # 8. Fazer login no Docker Hub
       - name: Fazer login no Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # 8. Construir a imagem Docker
+      # 9. Construir a imagem Docker
       - name: Construir a imagem Docker
         run: docker build -t sfbarcelos/pos_tech_fase_um_image:latest .
 
-      # 9. Fazer push da imagem para o Docker Hub
+      # 10. Fazer push da imagem para o Docker Hub
       - name: Fazer push da imagem para o Docker Hub
         run: docker push sfbarcelos/pos_tech_fase_um_image:latest
