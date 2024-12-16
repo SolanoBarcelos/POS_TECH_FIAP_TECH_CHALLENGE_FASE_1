@@ -29,32 +29,26 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v3
 
-      # 2. Configurar o .NET 8
+      # 2. Configurar .NET 8
       - name: Configurar .NET 8
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
 
-      # 3. Verificar se PostgreSQL, Docker e .NET estão instalados
-      - name: Verificar PostgreSQL, Docker e .NET
+      # 3. Verificar se o Docker e .NET estão funcionando corretamente
+      - name: Verificar Docker e .NET
         shell: pwsh
         run: |
-          Write-Host "Verificando se PostgreSQL está rodando localmente..."
-          if (-not (pg_isready -U admin)) {
-              Write-Host "PostgreSQL não está rodando"
-              exit 1
-          }
-          
-          Write-Host "Verificando se Docker está instalado..."
+          Write-Host "Verificando Docker..."
           if (-not (Get-Command docker -ErrorAction SilentlyContinue)) {
-              Write-Host "Docker não está instalado"
+              Write-Host "Docker não está instalado ou configurado"
               exit 1
           }
-          
-          Write-Host "Verificando se .NET SDK está instalado..."
+
+          Write-Host "Verificando .NET SDK..."
           if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
               Write-Host ".NET SDK não está instalado"
-              exit 1
+              exit 2
           }
 
       # 4. Restaurar dependências do projeto
