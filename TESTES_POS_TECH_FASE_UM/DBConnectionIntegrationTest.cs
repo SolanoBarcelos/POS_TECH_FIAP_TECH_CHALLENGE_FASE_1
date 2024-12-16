@@ -8,31 +8,20 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Npgsql;
 using POS_TECH_FASE_UM;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
+namespace TESTES_POS_TECH_FASE_UM.DataBaseIntegrationTests
 {
-    public class DBConnectionIntegrationTest : IClassFixture<WebApplicationFactory<Program>>
+    public class DBConnectionTests : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly WebApplicationFactory<Program> _factory;
         private readonly IConfiguration _configuration;
 
-        public DBConnectionIntegrationTest(WebApplicationFactory<Program> factory, IConfiguration configuration)
+        public DBConnectionTests(WebApplicationFactory<Program> factory)
         {
-            _factory = factory.WithWebHostBuilder(builder =>
-            {
-                builder.ConfigureAppConfiguration((context, config) =>
-                {
-                    config.AddJsonFile("appsettings.json");
-                });
+            _factory = factory;
 
-                builder.ConfigureServices(services =>
-                {
-                    // Caso seja necessário configurar serviços específicos para o ambiente de teste, faça isso aqui.
-                });
-            });
-            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+            // Obtenha o serviço IConfiguration do WebApplicationFactory
+            _configuration = _factory.Services.GetService(typeof(IConfiguration)) as IConfiguration;
         }
 
         [Fact]
@@ -41,6 +30,7 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
             // Arrange
             var client = _factory.CreateClient();
 
+            // Obtenha a connection string dinamicamente do appsettings.json
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
 
             // Act & Assert
@@ -50,39 +40,35 @@ namespace TESTES_POS_TECH_FASE_UM.DBConnectionIntegrationTest
                 {
                     dbConnection.Open();
 
+                    // Consulta SQL para pegar todos os contatos
                     var contatos = await dbConnection.QueryAsync<Contato>("SELECT * FROM contatos");
 
+                    // Verifica se o resultado não é nulo
                     Assert.NotNull(contatos);
+
+                    // Verifica se há contatos retornados
                     Assert.NotEmpty(contatos);
 
                     foreach (var contato in contatos)
                     {
-                        Assert.True(contato.id_contato > 0);
+                        // Verifica se os campos de cada contato estão preenchidos adequadamente
+                        Assert.True(contato.id_contato > 0); // Verifica se o Id é válido
                     }
                 }
             }
             catch (Exception ex)
             {
-                Assert.Null(ex);
+                Assert.Null(ex); // Garante que nenhuma exceção foi lançada
             }
         }
     }
 
     // Classe modelo para representar os Contatos
-    [Dapper.Contrib.Extensions.Table("contatos")]
     public class Contato
     {
-
-        [Column("id_contato")]
-        public int id_contato { get; set; }
-
-        [Column("nome_contato")]
-        public required string nome_contato { get; set; }
-
-        [Column("telefone_contato")]
-        public string telefone_contato { get; set; }
-
-        [Column("email_contato")]
-        public string email_contato { get; set; }
+        public int? id_contato { get; set; }
+        public string? nome_contato { get; set; }
+        public string? telefone_contato { get; set; }
+        public string? email_contato { get; set; }
     }
 }
