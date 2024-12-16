@@ -9,29 +9,14 @@ jobs:
   build:
     runs-on: self-hosted
 
-    services:
-      postgres:
-        image: postgres:latest
-        ports:
-          - 5432:5432
-        env:
-          POSTGRES_USER: admin
-          POSTGRES_PASSWORD: 1234
-          POSTGRES_DB: db_pos_fase_1
-        options: >-
-          --health-cmd="pg_isready -U admin" 
-          --health-interval=10s 
-          --health-timeout=5s 
-          --health-retries=5
-
     steps:
       # 1. Verificar dependências no runner self-hosted
-      - name: Verificar dependências do runner
+      - name: Verificar dependências no runner
         run: |
+          echo "Verificando se PostgreSQL está rodando localmente..."
+          pg_isready -U admin || (echo "PostgreSQL não está rodando" && exit 1)
           echo "Verificando se Docker está instalado..."
           docker --version || (echo "Docker não está instalado" && exit 1)
-          echo "Verificando se psql está instalado..."
-          psql --version || (echo "PostgreSQL client (psql) não está instalado" && exit 1)
           echo "Verificando se .NET SDK está instalado..."
           dotnet --version || (echo ".NET SDK não está instalado" && exit 1)
 
@@ -74,4 +59,3 @@ jobs:
       # 9. Fazer push da imagem para o Docker Hub
       - name: Fazer push da imagem para o Docker Hub
         run: docker push sfbarcelos/pos_tech_fase_um_image:latest
-
